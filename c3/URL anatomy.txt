@@ -1,0 +1,41 @@
+URL anatomy
+
+https://www.pero.com/about?id=123&ime=stanko
+28.144.23.186
+
+http/https - protocol
+http - port 80
+https = port 443
+
+www - subdomain
+pero - domain
+com - tld (top level domain)
+
+/about - route
+
+id=123 - query parameter (GET parameter)
+ime=stanko - query parameter (GET parameter)
+
+http://localhost:8080/
+
+
+/calc/add/4/7
+11
+
+/calc/mul/2/6
+12
+
+/calc/div/5/2
+2.5
+
+/calc/sub/8/3
+5
+
+
+
+
+[
+    "Pero Perovski",
+    "Janko Jankovski",
+    "Stanko Stankovski"
+]
