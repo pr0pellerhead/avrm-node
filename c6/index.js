@@ -24,11 +24,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const students = require('./handlers/students');
 const db = require('./db');
+const cors = require('cors');
 
 db.init();
 
 const api = express();
 api.use(bodyParser.json());
+api.use(cors());
 // RESOURCE: students
 api.get('/api/v1/students', students.getAll); // get all students
 api.get('/api/v1/students/:id', students.getOne); // get single student by id
